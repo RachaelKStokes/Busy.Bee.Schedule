@@ -1,3 +1,15 @@
+var timeNow = dayjs();
+var hour9 = document.getElementById('#hour-9');
+var hour10 = document.getElementById('#hour-10');
+var hour11 = document.getElementById('#hour-11');
+var hour12 = document.getElementById('#hour-12');
+var hour13 = document.getElementById('#hour-13');
+var hour14 = document.getElementById('#hour-14');
+var hour15 = document.getElementById('#hour-15');
+var hour16 = document.getElementById('#hour-16');
+var hour17 = document.getElementById('#hour-17');
+var workHours = "hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17";
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -14,7 +26,11 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
-  //
+  
+  function pastTense (str) {
+   // if (str < timeNow);
+   //if (dayjs().hour().isBefore(dayjs().hour()));
+  }
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
