@@ -4,10 +4,12 @@ var timeNow = dayjs().hour();
 var timeBlockLG = document.querySelector('container-lg px-5');
 
 
+$('#currentDay').text(timeNow);
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage.
 $('.saveBtn').on('click',function(event) {
+//timeBlockLG.on("cilck", ".saveBtn", function (event) {
  event.preventDefault();
 //variables for saving user input
  var clickSave = $(this);
