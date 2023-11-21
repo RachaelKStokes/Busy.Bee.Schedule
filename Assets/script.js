@@ -24,6 +24,24 @@ localStorage.setItem(timeID, userInput);
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+ 
+
+for (i = 9; i <= 17; i++) {
+  var timeBlockEL = $("#hour=" + i);
+
+  if (i < timeNow) {
+    timeBlockEL.addClass("past");
+
+  }else if (i > timeNow) {
+    timeBlockEL.addClass("future");
+
+  }else{
+    timeBlockEL.addClass("present");
+  }
+}
+  
+  
+  
 
 
   // TODO: Add code to get any user input that was saved in localStorage and set
